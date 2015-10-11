@@ -17,24 +17,130 @@ $(document).ready(function () {
                 //     alert('found!');
                 for(var i=0;i<data.songjson.length;i++){
                 
-                		                	$(".displayvideo").append(
-                		    '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
-                		        '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
-                		        '<h4>' + data.songjson[i].title + '</h4>' + 
-                		    '</div>'
-                		);
+                                            $(".displayvideo").append(
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                                '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
+                                '<h4>' + data.songjson[i].title + '</h4>' + 
+                            '</div>'
+                        );
 
 
-                	
-                	
+                    
+                    
 
 
       
                 }
 
-                for(var i=0;i<data.songjson.length;i++){
-                	console.log(data.songjson[i].title);
-                }
+
+
+
+               $( "#but2" ).on('click',function() {
+                  $(".displayvideo").empty();
+                  for(var i=0;i<data.songjson.length;i++){
+                       if(data.songjson[i].time<=5){
+
+                                            $(".displayvideo").append(
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                                '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
+                                '<h4>' + data.songjson[i].title + '</h4>' + 
+                            '</div>'
+                        );
+
+
+
+                       }
+                  
+                  
+                  }
+
+
+                 
+
+
+               });
+
+
+
+                $( "#but3" ).on('click',function() {
+                  $(".displayvideo").empty();
+                  for(var i=0;i<data.songjson.length;i++){
+                       if(data.songjson[i].time>=5 && data.songjson[i].time<=10){
+
+                                            $(".displayvideo").append(
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                                '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
+                                '<h4>' + data.songjson[i].title + '</h4>' + 
+                            '</div>'
+                        );
+
+
+
+                       }
+                  
+                  
+                  }
+
+
+                 
+
+
+               });
+
+
+
+
+                 $( "#but4" ).on('click',function() {
+                  $(".displayvideo").empty();
+                  for(var i=0;i<data.songjson.length;i++){
+                       if(data.songjson[i].time>=10 && data.songjson[i].time<=20){
+
+                                            $(".displayvideo").append(
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                                '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
+                                '<h4>' + data.songjson[i].title + '</h4>' + 
+                            '</div>'
+                        );
+
+
+
+                       }
+                  
+                  
+                  }
+
+
+                 
+
+
+               });
+
+
+
+                  $( "#but5" ).on('click',function() {
+                  $(".displayvideo").empty();
+                  for(var i=0;i<data.songjson.length;i++){
+                       if(data.songjson[i].time>20){
+
+                                            $(".displayvideo").append(
+                            '<div class="col-md-6 col-lg-4 movie-tile text-center bgvideo" data-trailer-youtube-id="' + data.songjson[i].url + '" data-toggle="modal" data-target="#trailer">' + 
+                                '<img src="http://img.youtube.com/vi/' + data.songjson[i].url + '/0.jpg" width="220" height="250">' +
+                                '<h4>' + data.songjson[i].title + '</h4>' + 
+                            '</div>'
+                        );
+
+
+
+                       }
+                  
+                  
+                  }
+
+
+                 
+
+
+               });
 
 
   
@@ -53,6 +159,3 @@ $(document).ready(function () {
         });
 
 });
-
-//https://script.google.com/macros/s/AKfycbyPKJwJ6mjEHQPY3uoACmifmQPT9CNh5DMYz5Mjs3r5x4zz1wh2/exec
-
